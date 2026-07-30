@@ -1,0 +1,35 @@
+# LaTeX build files
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# latexmk
+*.xdv
+
+# Backup
+*~
+*.bak
+*.backup
+
+# macOS
+.DS_Store
+
+# VSCode
+.vscode/
+
+# Temporary
+*.tmp
+resume.pdf
