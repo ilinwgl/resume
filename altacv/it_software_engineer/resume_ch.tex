@@ -1,0 +1,387 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.4, 30 July 2025) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,withhyper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,withhyper]{../altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage{xeCJK}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+
+% using XeLaTex
+% English font
+\setCJKmainfont{Roboto Slab}
+\setCJKsansfont{Lato}
+
+% Chinese font
+\setCJKmainfont{Microsoft YaHei}
+\setCJKsansfont{Microsoft YaHei}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{../pubs-num}
+
+
+\begin{document}
+\name{王冠麟}
+\tagline{软件与 IT 工程师}
+%% You can add multiple photos on the left or right
+\photoR{2.8cm}{../../images/gl_photo}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{g.wang@mail.de}
+  \phone{+49 151 56312173}
+  \mailaddress{Alfred-Messel-Weg 38, 64287, Darmstadt}
+  \printinfo{\faLinkedin}{Guanlin Wang}[https://www.linkedin.com/in/guanlin-wang-737354206]
+  % \printinfo{\simpleicon{linkedin}\hspace{0.3em}Guanlin Wang}[https://www.linkedin.com/in/guanlin-wang-737354206]
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.3}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+  \cvsection{个人能力}
+
+  % Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
+  \cvsubsection{系统 \& 部署}
+  \cvtag{Linux}
+
+  \vspace{0.5em}
+
+  \cvtag{Ubuntu / WSL}
+
+  \vspace{0.5em}
+
+  \cvtag{Docker}
+
+  \vspace{0.5em}
+
+  \cvtag{SSH}
+
+  \vspace{0.5em}
+  
+  \cvtag{Shell / Bash}
+  
+  \vspace{0.5em}
+
+  \cvtag{Batch}
+
+  \vspace{0.5em}
+
+  \divider\smallskip
+
+  \cvsubsection{软件开发}
+  
+  \cvtag{Python}
+  
+  \vspace{0.5em}
+
+  \cvtag{C++}
+  
+  \vspace{0.5em}
+
+  \cvtag{C\#}
+  
+  \vspace{0.5em}
+
+  \cvtag{.NET}
+  
+  \vspace{0.5em}
+
+  \cvtag{REST API}
+  
+  \vspace{0.5em}
+
+  \cvtag{FastAPI}
+  
+  \vspace{0.5em}
+
+  \cvtag{ASP.NET Core}
+  
+  \vspace{0.5em}
+
+  \divider\smallskip
+
+  \cvsubsection{数据库 \& 集成}
+  
+  \cvtag{Microsoft SQL Server}
+  
+  \vspace{0.5em}
+
+  \cvtag{SQL}
+  
+  \vspace{0.5em}
+
+  \cvtag{System Integration}
+
+  \vspace{0.5em}
+
+  \divider\smallskip
+
+  \cvsubsection{AI \& 图像处理}
+  
+  \cvtag{Image Processing}
+  
+  \vspace{0.5em}  
+  
+  \cvtag{OCR}
+  
+  \vspace{0.5em}  
+  
+  \cvtag{Computer Vision}
+  
+  \vspace{0.5em}  
+  
+  \cvtag{OpenCV}
+  
+  \vspace{0.5em}  
+  
+  \cvtag{PyTorch}
+
+  \vspace{0.5em}
+
+  \vspace{10em}
+
+  \cvsection{语言能力}
+
+  \cvtag{中文 (母语)}
+
+  \vspace{0.5em}
+
+  \cvtag{德语 (C1)}
+
+  \vspace{0.5em}
+
+  \cvtag{英语 (B2)}
+
+
+  %% Yeah I didn't spend too much time making all the
+  %% spacing consistent... sorry. Use \smallskip, \medskip,
+  %% \bigskip, \vspace etc to make adjustments.
+  \medskip
+
+  % use ONLY \newpage if you want to force a page break for
+  % ONLY the current column
+  \newpage
+
+  %% Switch to the right column. This will now automatically move to the second
+  %% page if the content is too long.
+  \switchcolumn
+  \cvsection{工作经验}
+
+  \cvevent{软件与 AI / 计算机视觉开发工程师}{Innomatik AG}{06/2021 -- 至今}{本斯海姆}
+
+  \vspace{1em}
+
+  % lnux system
+  \cvsubsubsection{Linux、开发环境与自动化}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item 使用 Ubuntu WSL 作为主要开发环境，并搭建和配置项目所需的软件及 AI 环境
+    \item 使用 SSH 连接公司内部 Linux 服务器并进行开发工作
+    \item 编写 Shell 和 Batch 脚本，用于程序启动、参数传递、文件及路径检查，以及所需运行组件的自动配置
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \textbf{技术}：Linux、Ubuntu、WSL、Shell、Bash、Batch、SSH、Git
+
+  \vspace{1.5em}
+
+  % deployment
+  \cvsubsubsection{部署、容器化与故障排查}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item 将自主开发的应用程序和 REST 服务部署在本地开发环境、公司内部服务器以及现有企业软件系统中
+    \item 使用 Docker 对不同应用程序和 AI 服务进行容器化并运行
+    \item 配置 REST 接口、端口及运行参数，使部署后的服务能够在公司内部环境中访问
+    \item 独立分析并解决部署和应用运行过程中出现的技术问题，包括 URL 路由错误、端口冲突、Docker 容器无法启动，以及应用程序和配置错误等
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \textbf{技术}：Docker、REST API、FastAPI、ASP.NET Core、Python、C++、C\#
+
+  \vspace{1.5em}
+
+  % software development
+  \cvsubsubsection{软件开发与系统集成}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item 使用 Python、C++ 和 C\# 开发模块化软件组件及数据处理 Pipeline，并通过 REST 接口提供服务
+    \item 使用 FastAPI 和 ASP.NET Core WebAPI 开发服务，并集成至现有 .NET Blazor Server 系统
+    \item 将基于 ONNX 的 AI 组件集成到 C++ 和 C\# 应用程序中，并开发用于内部技术流程的独立桌面应用和控制台程序
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \textbf{技术}：Python、C++、C\#、.NET、ASP.NET Core、Blazor Server、FastAPI、REST API、ONNX
+
+  \vspace{1.5em}
+
+  \newpage
+
+  % database
+  \cvsubsubsection{数据库应用与软件开发}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item 在现有企业软件开发过程中持续使用 Microsoft SQL Server
+    \item 分析数据库结构、数据类型及数据关系，并理解其在软件模型以及数据读写流程中的映射关系
+    \item 创建和修改测试数据，用于验证新增功能及现有软件功能的正确性
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \textbf{技术}：Microsoft SQL Server、SQL、.NET
+
+  \vspace{1.5em}
+
+  % computer vision
+  \cvsubsubsection{OCR 与工业图像处理}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item 开发面向真实图像及工程图纸的模块化 OCR Pipeline，包括 Text Detection 与 Text Recognition
+    \item 搭建完整的训练与处理流程，包括数据准备、标注、模型训练以及图像预处理和后处理
+    \item 将应用部署为本地软件、REST 服务及 Docker 容器化应用
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \textbf{技术}：Python、OpenCV、PyTorch、PaddleOCR、ONNX、FastAPI、Docker
+
+  \vspace{1.5em}
+
+
+  \cvsection{教育经历}
+
+  \cvevent{土木工程信息技术硕士}{达姆施塔特工业大学}{04/2018 -- 03/2021}{达姆施塔特}
+
+  \vspace{1.0em}
+
+  \cvsubsection{主要方向}
+  
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item 基于 .NET Framework 的 Revit 插件开发
+    \item 使用 SQLite 进行 BIM 数据库开发（CRUD）
+    \item 使用 MS Project 进行 BIM 项目管理
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \cvsubsection{科研助理 （HiWi）}
+
+  \vspace{1.0em}
+
+  SCOPE (Semantic Construction Project Engineering)
+  \begin{itemize}
+    \item 使用 Three.js 开发基于 Web 的 ViewCube
+    \item 使用 Protégé 对 IFC 层级结构进行本体建模
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \divider
+
+  \cvevent{桥梁工程学士}{长安大学}{09/2012 -- 06/2016}{西安}
+
+  % \divider
+
+  \medskip
+
+
+\end{paracol}
+
+
+\end{document}

@@ -45,7 +45,8 @@
 \RequirePackage{xcolor}
 %% v1.3.2 Hopefully this helps make the PDF
 %% file more 'friendly' with copy-paste etc
-\RequirePackage[a-1b]{pdfx}
+% \RequirePackage[a-1b]{pdfx}
+\RequirePackage{hyperref}
 \RequirePackage{accsupp}
 %% v1.7.3 Avoid 'Token not allowed' when \\ used with accsupp
 \pdfstringdefDisableCommands{
@@ -284,7 +285,7 @@
 \newcommand{\cvsectionfont}{\LARGE\bfseries}
 \newcommand{\cvsubsectionfont}{\large\bfseries}
 \newcommand{\cvsubsubsectionfont}{%
-  \fontsize{11pt}{13pt}\selectfont\bfseries
+  \fontsize{13pt}{15pt}\selectfont\bfseries
 }
 
 \newcommand{\makecvheader}{%

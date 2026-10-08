@@ -1,0 +1,19 @@
+Bewerbung als AI Software Engineer (d/w/m)
+
+Sehr geehrte Damen und Herren,
+
+mit großem Interesse habe ich Ihre Stellenausschreibung für die Position AI Software Engineer gelesen. Die Verbindung von moderner KI, Computer Vision und Softwareentwicklung im Bereich der digitalen Mikroskopie entspricht genau den Themen, mit denen ich mich in den vergangenen Jahren intensiv beschäftigt habe. Daher möchte ich meine Erfahrung und meine Begeisterung für innovative AI-Lösungen gerne bei Leica Microsystems einbringen.
+
+In meiner bisherigen Tätigkeit lag mein Schwerpunkt auf der Entwicklung industrieller Computer-Vision-Anwendungen. Dabei war ich für den gesamten Entwicklungsprozess verantwortlich – von der Anforderungsanalyse über die Datenaufbereitung und das Modelltraining bis hin zur Integration, Optimierung und Bereitstellung produktiver Softwarelösungen. Zu meinen Projekten gehören unter anderem OCR-Systeme, Object Detection, Visual Localization sowie weitere bildverarbeitende Anwendungen auf Basis von Python, PyTorch und OpenCV.
+
+Neben klassischen Computer-Vision-Verfahren beschäftige ich mich intensiv mit aktuellen Entwicklungen im Bereich Generative AI. In eigenen Projekten arbeite ich mit LLMs, Retrieval-Augmented Generation (RAG), Vektor-Datenbanken und agentenbasierten Architekturen und entwickle modulare AI-Services für produktionsnahe Anwendungen. Besonders motiviert mich die Möglichkeit, moderne AI-Technologien mit robuster Softwareentwicklung zu verbinden und daraus praxistaugliche Lösungen zu entwickeln.
+
+Besonders angesprochen hat mich an Ihrer Ausschreibung die Verantwortung für den gesamten Software-Lebenszyklus sowie die enge Zusammenarbeit in interdisziplinären Entwicklungsteams. Ich arbeite strukturiert, selbstständig und mit hoher Eigenverantwortung. Gleichzeitig schätze ich den fachlichen Austausch im Team und lerne gerne neue Technologien und Anwendungsgebiete kennen. Obwohl ich bisher noch nicht im Bereich Mikroskopie oder Life Sciences gearbeitet habe, freue ich mich darauf, mich schnell in dieses spannende Umfeld einzuarbeiten und mein Computer-Vision-Know-how dort einzubringen.
+
+Leica Microsystems steht weltweit für Innovation und höchste Qualität. Es würde mich sehr freuen, Teil Ihres Entwicklungsteams zu werden und gemeinsam an den AI-Lösungen der nächsten Generation mitzuwirken.
+
+Über die Gelegenheit zu einem persönlichen Gespräch freue ich mich sehr.
+
+Mit freundlichen Grüßen
+
+Guanlin Wang

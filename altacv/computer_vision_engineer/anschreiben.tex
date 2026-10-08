@@ -1,0 +1,166 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.4, 30 July 2025) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,withhyper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,withhyper]{../altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+\iftutex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{../pubs-num}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Guanlin Wang}
+\tagline{Computer Vision Engineer}
+%% You can add multiple photos on the left or right
+\photoR{2.8cm}{../../images/gl_photo}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+    % Not all of these are required!
+    \email{g.wang@mail.de}
+    \phone{+49 151 56312173}
+    \mailaddress{Alfred-Messel-Weg 38, 64287, Darmstadt}
+    \printinfo{\faLinkedin}{Guanlin Wang}[https://www.linkedin.com/in/guanlin-wang-737354206]
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{1}
+
+    \cvsection{Bewerbung als Software Engineer Computer Vision}
+
+    Sehr geehrte Damen und Herren,
+
+    \vspace{2em}
+
+    mit großem Interesse habe ich Ihre Stellenausschreibung für die Position als Software Engineer Computer Vision gelesen. Die Verbindung aus Computer Vision, Machine Learning und produktionsnaher Softwareentwicklung entspricht genau dem Bereich, in dem ich in den vergangenen Jahren intensiv gearbeitet habe und den ich künftig weiter vertiefen möchte.
+
+    \vspace{2em}
+
+    In meiner bisherigen Tätigkeit habe ich verschiedene Computer-Vision-Lösungen eigenständig konzipiert und umgesetzt. Dazu gehören unter anderem OCR-Systeme für reale Bilder und technische Zeichnungen, Object-Detection-Lösungen sowie Verfahren zur visuellen Lokalisierung. Dabei war ich nicht nur für die Modellentwicklung verantwortlich, sondern für die gesamte Verarbeitungskette – von Datenaufbereitung und Annotation über Training, Evaluation und Inferenz bis hin zur Integration und Bereitstellung der Modelle in produktionsnahen Anwendungen.
+
+    \vspace{2em}
+
+    Ein besonderer Schwerpunkt meiner Arbeit liegt auf Python-basierter Computer-Vision-Entwicklung mit PyTorch und OpenCV. Für den produktiven Einsatz habe ich Modelle unter anderem über FastAPI, REST-Schnittstellen und Docker bereitgestellt sowie ONNX-basierte Inferenzlösungen in weitere Softwareumgebungen integriert. Mir ist wichtig, Machine-Learning-Modelle nicht isoliert zu betrachten, sondern als Bestandteil robuster, wartbarer und skalierbarer Softwaresysteme.
+
+    \vspace{2em}
+
+    Die bei Schwarz Digits beschriebene Kombination aus industriellen Computer-Vision-Anwendungen, Modelltraining, Software Engineering und End-to-End-Umsetzung spricht mich daher besonders an. Ich möchte meine bisherigen Erfahrungen gezielt in ein Umfeld einbringen, in dem moderne Computer-Vision-Technologien nicht nur prototypisch entwickelt, sondern zuverlässig in reale Anwendungen überführt werden.
+
+    \vspace{2em}
+
+    Neben meiner technischen Erfahrung bringe ich eine selbstständige und strukturierte Arbeitsweise sowie große Freude daran mit, komplexe technische Probleme praktisch zu lösen und gemeinsam mit einem Team weiterzuentwickeln.
+
+    \vspace{2em}
+
+    Ich freue mich darauf, meine Kenntnisse und Erfahrungen bei Schwarz Digits einzubringen und mich persönlich bei Ihnen vorzustellen.
+
+    \vspace{5em}
+
+    Mit freundlichen Grüßen
+
+    \vspace{1em}
+
+    Guanlin Wang
+
+
+
+    % \divider
+
+    \medskip
+
+
+\end{paracol}
+
+
+\end{document}

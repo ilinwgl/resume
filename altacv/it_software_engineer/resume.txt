@@ -1,0 +1,52 @@
+## BERUFSERFAHRUNG
+
+### Computer Vision Entwickler
+
+**Innomatik AG, Bensheim | 06/2021 – Heute**
+
+### Linux, Entwicklungsumgebungen & Automatisierung
+
+* Nutzung von **Ubuntu unter WSL** als zentrale Entwicklungsumgebung sowie Einrichtung und Konfiguration projektspezifischer Software- und AI-Umgebungen
+* Sicherer Umgang mit grundlegenden Linux-Werkzeugen für Datei- und Verzeichnisverwaltung, Berechtigungen, Prozessausführung und Softwarekonfiguration
+* Nutzung von **SSH** für die Entwicklung und Arbeit auf internen Linux-Servern
+* Erstellung von **Shell- und Batch-Skripten** zur Automatisierung von Programmstarts, Parameterübergabe, Datei- und Pfadprüfung sowie zur Einrichtung benötigter Laufzeitkomponenten
+
+**Technologien:** Linux, Ubuntu, WSL, Shell, Bash, Batch, SSH, Git
+
+### Deployment, Containerisierung & Troubleshooting
+
+* Bereitstellung eigener Anwendungen und REST-Services auf lokalen Entwicklungsrechnern, internen Servern sowie innerhalb bestehender Unternehmenssysteme
+* Containerisierung und Ausführung verschiedener Anwendungen und AI-Services mit **Docker**
+* Konfiguration von REST-Endpunkten, Ports und Laufzeitparametern für den internen Zugriff auf bereitgestellte Services
+* Eigenständige Analyse und Behebung technischer Probleme bei Deployment und Betrieb, unter anderem bei fehlerhaften URL-Routen, Port-Konflikten, nicht startenden Docker-Containern sowie Anwendungs- und Konfigurationsfehlern
+* Integration und Bereitstellung von Python-, C++- und C#-Komponenten in bestehende Softwareumgebungen
+
+**Technologien:** Docker, REST-API, FastAPI, ASP.NET Core, Python, C++, C#
+
+### Softwareentwicklung & Systemintegration
+
+* Entwicklung modularer Softwarekomponenten und Verarbeitungspipelines mit **Python, C++ und C#**
+* Entwicklung von REST-Services mit **FastAPI** und **ASP.NET Core WebAPI**
+* Integration von ONNX-basierten AI-Komponenten in C++- und C#-Anwendungen sowie Einbindung in bestehende **.NET Blazor-Server-Systeme**
+* Entwicklung von Desktop-, Konsolen- und Web-Anwendungen für interne technische Workflows
+* Verarbeitung strukturierter Daten und Entwicklung von Schnittstellen für den Datenaustausch zwischen unterschiedlichen Softwarekomponenten
+
+**Technologien:** Python, C++, C#, .NET, ASP.NET Core, Blazor Server, REST-API, ONNX, JSON
+
+### Datenbanken & datenbasierte Softwareentwicklung
+
+* Regelmäßige Arbeit mit **Microsoft SQL Server** im Rahmen der Entwicklung bestehender Unternehmenssoftware
+* Analyse von Datenbanktabellen, Spalten, Datentypen und Beziehungen zur Nachvollziehbarkeit bestehender Datenmodelle und deren Abbildung im Anwendungscode
+* Vergleich von Datenbankstrukturen und Softwaremodellen zur Analyse von Datenmapping sowie Lese- und Schreibprozessen
+* Erstellung und Anpassung von Testdaten zur Validierung neuer und bestehender Softwarefunktionen
+
+**Technologien:** Microsoft SQL Server, SQL, .NET
+
+### OCR & industrielle Bildverarbeitung
+
+* Entwicklung einer modularen **OCR-Pipeline** für reale Bilder und technische Zeichnungen mit Text Detection und Text Recognition
+* Aufbau einer vollständigen Trainings- und Verarbeitungspipeline einschließlich Datenvorbereitung, Annotation, Modelltraining sowie Bildvor- und Nachverarbeitung
+* Entwicklung weiterer automatisierter Bildverarbeitungslösungen für industrielle Bilddaten
+* Bereitstellung der Anwendungen als lokale Software, REST-Service und containerisierte Anwendung
+
+**Technologien:** Python, OpenCV, PyTorch, PaddleOCR, ONNX, FastAPI, Docker

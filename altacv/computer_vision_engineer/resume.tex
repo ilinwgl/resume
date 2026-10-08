@@ -14,7 +14,7 @@
 %% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
 % \documentclass[10pt,a4paper,withhyper,normalphoto]{altacv}
 
-\documentclass[10pt,a4paper,withhyper]{altacv}
+\documentclass[10pt,a4paper,withhyper]{../altacv}
 %% AltaCV uses the fontawesome5 and simpleicons packages.
 %% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
 
@@ -89,21 +89,21 @@
 %% Use (and optionally edit if necessary) this .tex if you
 %% want an originally numerical reference style like IEEE
 %% for your publication list
-\input{pubs-num}
+\input{../pubs-num}
 
 %% sample.bib contains your publications
 \addbibresource{sample.bib}
 
 \begin{document}
 \name{Guanlin Wang}
-\tagline{Computer Vision Engineer}
+\tagline{Computer Vision / AI Engineer}
 %% You can add multiple photos on the left or right
-\photoR{2.8cm}{gl_photo}
+\photoR{2.8cm}{../../images/gl_photo}
 % \photoL{2.5cm}{Yacht_High,Suitcase_High}
 
 \personalinfo{%
   % Not all of these are required!
-  \email{ilinwgl@gmail.com}
+  \email{g.wang@mail.de}
   \phone{+49 151 56312173}
   \mailaddress{Alfred-Messel-Weg 38, 64287, Darmstadt}
   \printinfo{\faLinkedin}{Guanlin Wang}[https://www.linkedin.com/in/guanlin-wang-737354206]
@@ -124,6 +124,9 @@
 
   % Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
   \cvsubsection{Computer Vision}
+  
+  \vspace{0.5em}
+
   \cvtag{Computer Vision}
 
   \vspace{0.5em}
@@ -137,8 +140,17 @@
   \divider\smallskip
 
   \cvsubsection{Computer Vision Stack}
+
+  \vspace{0.5em}
+
   \cvtag{OpenCV}
+
+  \vspace{0.5em}
+
   \cvtag{PyTorch}
+  
+  \vspace{0.5em}
+
   \cvtag{ONNX}
 
   \vspace{0.5em}
@@ -148,13 +160,25 @@
   \divider\smallskip
 
   \cvsubsection{Software Development}
+
+  \vspace{0.5em}
+
   \cvtag{Python}
+  
+  \vspace{0.5em}
+
   \cvtag{C++}
+  
+  \vspace{0.5em}
+
   \cvtag{C\#}
 
   \vspace{0.5em}
 
   \cvtag{REST-API}
+  
+  \vspace{0.5em}
+  
   \cvtag{FastAPI}
 
   \vspace{0.5em}
@@ -168,13 +192,24 @@
   \divider\smallskip
 
   \cvsubsection{Tools}
+
+  \vspace{0.5em}
+
   \cvtag{Docker}
+
+  \vspace{0.5em}
+
   \cvtag{Git}
+  
+  \vspace{0.5em}
+  
   \cvtag{Linux}
 
-  \vspace{10em}
 
+  \newpage
   \cvsection{SPRACHEN}
+
+  \vspace{0.5em}
 
   \cvtag{Chinesisch (Muttersprache)}
 
@@ -201,7 +236,7 @@
   \switchcolumn
   \cvsection{BERUFSERFAHRUNG}
 
-  \cvevent{Computer Vision Entwickler}{Innomatik AG}{06/2021 -- Heute}{Bensheim}
+  \cvevent{Computer Vision / AI Entwickler}{Innomatik AG}{06/2021 -- Heute}{Bensheim}
 
   \vspace{1em}
 
@@ -218,7 +253,7 @@
 
   \vspace{0.5em}
 
-  \textbf{Technologien}: Python, OpenCV, PyTorch, PaddleOCR, FastAPI, REST-API, Docker
+  \textbf{Technologien}: Python, OpenCV, PyTorch, PaddleOCR, FastAPI, REST-API, Docker, uv, Git
 
   \vspace{0.5em}
 
@@ -235,7 +270,7 @@
 
   \vspace{0.5em}
 
-  \textbf{Technologien}: Python, YOLOv12, ONNX, C\#, ASP.NET Core WebAPI, Blazor Server, Docker
+  \textbf{Technologien}: Python, YOLOv12, ONNX, C\#, ASP.NET Core WebAPI, Blazor Server, Docker, uv, Git
 
   \vspace{0.5em}
 
@@ -257,6 +292,8 @@
 
   \vspace{0.5em}
 
+  \newpage
+  
   % qr- barcode
   \cvsubsubsection{QR- und Barcode-Erkennungssystem}
 
@@ -270,10 +307,10 @@
 
   \vspace{0.5em}
 
-  \textbf{Technologien}: Python, OpenCV, ZBar
+  \textbf{Technologien}: Python, OpenCV, ZBar, uv, Git
 
   \vspace{0.5em}
-
+  
   % Mesh-Analyse 
   \cvsubsubsection{Mesh-Analyse für Bauwerksmodelle}
 
@@ -287,7 +324,7 @@
 
   \vspace{0.5em}
 
-  \textbf{Technologien}: Python, C\#, IfcOpenShell, Open3D
+  \textbf{Technologien}: Python, C\#, IfcOpenShell, Open3D, uv
 
   \vspace{0.5em}
 
@@ -322,6 +359,8 @@
     \item BIM-Datenbanken (CRUD) mit \textbf{SQLite}
     \item BIM-Projektmanagement mit \textbf{MS Project}
   \end{itemize}
+
+  \vspace{0.5em}
 
   \cvsubsection{Wissenschaftliche Hilfskraft (HiWi)}
 

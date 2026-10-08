@@ -1,0 +1,46 @@
+工作经历
+Computer Vision 开发工程师
+
+Innomatik AG，Bensheim | 06/2021 – 至今
+
+Linux、开发环境与自动化
+使用 Ubuntu WSL 作为主要开发环境，并负责不同软件及 AI 项目的开发环境搭建与配置
+熟悉 Linux 基础操作，包括文件与目录管理、权限设置、程序执行以及软件环境配置
+使用 SSH 连接公司内部 Linux 服务器并进行开发工作
+编写 Shell 和 Batch 脚本，用于程序启动、参数传递、文件与路径检查，以及所需运行组件的自动配置与调用
+
+技术： Linux、Ubuntu、WSL、Shell、Bash、Batch、SSH、Git
+
+软件部署、容器化与故障排查
+将自主开发的应用程序和 REST 服务部署在本地开发环境、公司内部服务器以及现有企业软件系统中
+使用 Docker 对不同应用程序和 AI 服务进行容器化及运行部署
+配置 REST 接口、端口及运行参数，使部署后的服务可以在公司内部网络环境中访问
+独立分析并解决部署和运行过程中出现的技术问题，包括 URL 路由错误、端口占用、Docker 容器无法启动、程序错误以及配置问题等
+将 Python、C++ 和 C# 开发的组件集成并部署到现有软件环境中
+
+技术： Docker、REST API、FastAPI、ASP.NET Core、Python、C++、C#
+
+软件开发与系统集成
+使用 Python、C++ 和 C# 开发模块化软件组件及数据处理 Pipeline
+使用 FastAPI 和 ASP.NET Core WebAPI 开发 REST 服务
+将基于 ONNX 的 AI 模型集成到 C++ 和 C# 应用程序中，并进一步集成至现有 .NET Blazor Server 系统
+开发用于内部技术流程的桌面应用、Console 程序及 Web 应用
+处理结构化数据，并开发不同软件模块之间的数据交换接口
+
+技术： Python、C++、C#、.NET、ASP.NET Core、Blazor Server、REST API、ONNX、JSON
+
+数据库与数据驱动的软件开发
+在现有企业软件开发过程中持续使用 Microsoft SQL Server
+分析数据库表结构、字段、数据类型及数据关系，以理解已有数据模型及其在应用程序代码中的映射方式
+对照数据库结构与软件模型，分析数据映射、读取及写入流程
+创建和修改测试数据，用于验证新增功能及已有软件功能的正确性
+
+技术： Microsoft SQL Server、SQL、.NET
+
+OCR 与工业图像处理
+开发面向真实图像及工程图纸的模块化 OCR Pipeline，包括 Text Detection 与 Text Recognition
+搭建完整的训练与处理流程，包括数据准备、标注、模型训练以及图像预处理和后处理
+开发面向工业图像数据的自动化图像处理与识别方案
+将应用部署为本地软件、REST 服务及 Docker 容器化服务
+
+技术： Python、OpenCV、PyTorch、PaddleOCR、ONNX、FastAPI、Docker

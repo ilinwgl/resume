@@ -1,0 +1,384 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.4, 30 July 2025) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,withhyper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,withhyper]{../altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+\iftutex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{../pubs-num}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Guanlin Wang}
+\tagline{Software \& IT Engineer}
+%% You can add multiple photos on the left or right
+\photoR{2.8cm}{../../images/gl_photo}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{g.wang@mail.de}
+  \phone{+49 151 56312173}
+  \mailaddress{Alfred-Messel-Weg 38, 64287, Darmstadt}
+  \printinfo{\faLinkedin}{Guanlin Wang}[https://www.linkedin.com/in/guanlin-wang-737354206]
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.3}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+  \cvsection{FÄHIGKEITEN}
+
+  % Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
+  \cvsubsection{Systeme \& Deployment}
+  \cvtag{Linux}
+
+  \vspace{0.5em}
+
+  \cvtag{Ubuntu / WSL}
+
+  \vspace{0.5em}
+
+  \cvtag{Docker}
+
+  \vspace{0.5em}
+
+  \cvtag{SSH}
+
+  \vspace{0.5em}
+  
+  \cvtag{Shell / Bash}
+  
+  \vspace{0.5em}
+
+  \cvtag{Batch}
+
+  \vspace{0.5em}
+
+  \divider\smallskip
+
+  \cvsubsection{Softwareentwicklung}
+  
+  \cvtag{Python}
+  
+  \vspace{0.5em}
+
+  \cvtag{C++}
+  
+  \vspace{0.5em}
+
+  \cvtag{C\#}
+  
+  \vspace{0.5em}
+
+  \cvtag{.NET}
+  
+  \vspace{0.5em}
+
+  \cvtag{REST API}
+  
+  \vspace{0.5em}
+
+  \cvtag{FastAPI}
+  
+  \vspace{0.5em}
+
+  \cvtag{ASP.NET Core}
+  
+  \vspace{0.5em}
+
+  \divider\smallskip
+
+  \cvsubsection{Datenbanken \& Integration}
+  
+  \cvtag{Microsoft SQL Server}
+  
+  \vspace{0.5em}
+
+  \cvtag{SQL}
+  
+  \vspace{0.5em}
+
+  \cvtag{System Integration}
+
+  \vspace{0.5em}
+
+  \divider\smallskip
+
+  \cvsubsection{AI \& Bildverarbeitung}
+  
+  \cvtag{Image Processing}
+  
+  \vspace{0.5em}  
+  
+  \cvtag{OCR}
+  
+  \vspace{0.5em}  
+  
+  \cvtag{Computer Vision}
+  
+  \vspace{0.5em}  
+  
+  \cvtag{OpenCV}
+  
+  \vspace{0.5em}  
+  
+  \cvtag{PyTorch}
+
+  \vspace{0.5em}  \vspace{10em}
+
+  \cvsection{SPRACHEN}
+
+  \cvtag{Chinesisch (Muttersprache)}
+
+  \vspace{0.5em}
+
+  \cvtag{Deutsch (C1)}
+
+  \vspace{0.5em}
+
+  \cvtag{Englisch (B2)}
+
+
+  %% Yeah I didn't spend too much time making all the
+  %% spacing consistent... sorry. Use \smallskip, \medskip,
+  %% \bigskip, \vspace etc to make adjustments.
+  \medskip
+
+  % use ONLY \newpage if you want to force a page break for
+  % ONLY the current column
+  \newpage
+
+  %% Switch to the right column. This will now automatically move to the second
+  %% page if the content is too long.
+  \switchcolumn
+  \cvsection{BERUFSERFAHRUNG}
+
+  \cvevent{Software | AI \& Computer Vision Entwickler}{Innomatik AG}{06/2021 -- Heute}{Bensheim}
+
+  \vspace{1em}
+
+  % linux system
+  \cvsubsubsection{Linux, Entwicklungsumgebungen \& Automatisierung}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item Nutzung von \textbf{Ubuntu unter WSL} als zentrale Entwicklungsumgebung sowie Einrichtung und Konfiguration projektspezifischer Software- und AI-Umgebungen
+    \item Nutzung von \textbf{SSH} für die Entwicklung und Arbeit auf internen Linux-Servern
+    \item Erstellung von \textbf{Shell- und Batch-Skripten} zur Automatisierung von Programmstarts, Parameterübergabe, Datei- und Pfadprüfung sowie zur Einrichtung benötigter Laufzeitkomponenten
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \textbf{Technologien}: Linux, Ubuntu, WSL, Shell, Bash, Batch, SSH, Git
+  \vspace{1.5em}
+
+  % deployment
+  \cvsubsubsection{Deployment, Containerisierung \& Troubleshooting}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item Bereitstellung eigener Anwendungen und REST-Services auf lokalen Entwicklungsrechnern, internen Servern sowie innerhalb bestehender Unternehmenssysteme
+    \item Containerisierung und Ausführung verschiedener Anwendungen und AI-Services mit \textbf{Docker}
+    \item Konfiguration von REST-Endpunkten, Ports und Laufzeitparametern für den internen Zugriff auf bereitgestellte Services
+    \item Eigenständige Analyse und Behebung technischer Probleme bei Deployment und Anwendungsausführung, unter anderem bei fehlerhaften URL-Routen, Port-Konflikten, nicht startenden Docker-Containern sowie Anwendungs- und Konfigurationsfehlern
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \textbf{Technologien}: Docker, REST-API, FastAPI, ASP.NET Core, Python, C++, C\#
+
+  \vspace{1.5em}
+
+  % software development
+  \cvsubsubsection{Softwareentwicklung \& Systemintegration}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item Entwicklung modularer Softwarekomponenten und Verarbeitungspipelines mit Python, C++ und C\# sowie Bereitstellung über REST-Schnittstellen
+    \item Entwicklung von Services mit FastAPI und ASP.NET Core WebAPI sowie Integration in bestehende .NET Blazor-Server-Systeme
+    \item Integration von ONNX-basierten AI-Komponenten in C++- und C\#-Anwendungen sowie Entwicklung eigenständiger Desktop- und Konsolenanwendungen für interne technische Workflows
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \textbf{Technologien}: Python, C++, C\#, .NET, ASP.NET Core, Blazor Server, FastAPI, REST-API, ONNX
+
+  \vspace{1.5em}
+
+  \newpage
+
+  % database
+  \cvsubsubsection{Datenbanken \& Softwareentwicklung}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item Regelmäßige Arbeit mit \textbf{Microsoft SQL Server} im Rahmen der Entwicklung bestehender Unternehmenssoftware
+    \item Analyse von Datenbankstrukturen, Datentypen und Beziehungen sowie deren Abbildung in Softwaremodellen und Lese-/Schreibprozessen
+    \item Erstellung und Anpassung von Testdaten zur Validierung neuer und bestehender Softwarefunktionen
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \textbf{Technologien}: Microsoft SQL Server, SQL, .NET
+
+  \vspace{1.5em}
+
+  % computer vision
+  \cvsubsubsection{OCR \& industrielle Bildverarbeitung}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item Entwicklung einer modularen \textbf{OCR-Pipeline} für reale Bilder und technische Zeichnungen mit Text Detection und Text Recognition
+    \item Aufbau einer vollständigen Trainings- und Verarbeitungspipeline einschließlich Datenvorbereitung, Annotation, Modelltraining sowie Bildvor- und Nachverarbeitung
+    \item Bereitstellung der Anwendungen als lokale Software, REST-Service und containerisierte Anwendung
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \textbf{Technologien}: Python, OpenCV, PyTorch, PaddleOCR, ONNX, FastAPI, Docker
+
+  \vspace{1.5em}
+
+
+  \cvsection{AUSBILDUNG}
+
+  \cvevent{M.Sc. Informatik im Bauwesen}{Technische Universität Darmstadt}{04/2018 -- 03/2021}{Darmstadt}
+
+  \vspace{1.0em}
+
+  \cvsubsection{Schwerpunkte}
+
+  \vspace{1.0em}
+
+  \begin{itemize}
+    \item Revit-Plugin-Entwicklung mit \textbf{.NET Framework}
+    \item BIM-Datenbanken (CRUD) mit \textbf{SQLite}
+    \item BIM-Projektmanagement mit \textbf{MS Project}
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \cvsubsection{Wissenschaftliche Hilfskraft (HiWi)}
+
+  \vspace{1.0em}
+
+  SCOPE (Semantic Construction Project Engineering)
+  \begin{itemize}
+    \item Entwicklung eines webbasierten ViewCube mit Three.js
+    \item Ontologiemodellierung der IFC-Hierarchie mit Protégé
+  \end{itemize}
+
+  \vspace{1.0em}
+
+  \divider
+
+  \cvevent{B.Sc. Brückenbau}{Chan'an Universität}{09/2012 -- 06/2016}{Xi'an, China}
+
+  % \divider
+
+  \medskip
+
+
+\end{paracol}
+
+
+\end{document}

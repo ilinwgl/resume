@@ -1,0 +1,384 @@
+%%%%%%%%%%%%%%%%%
+% This is an sample CV template created using altacv.cls
+% (v1.7.4, 30 July 2025) written by LianTze Lim (liantze@gmail.com). Compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+%
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,withhyper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper,withhyper]{../altacv}
+%% AltaCV uses the fontawesome5 and simpleicons packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/simpleicons for full list of symbols.
+
+% Change the page layout if you need to
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+\usepackage{xeCJK}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+% WHEN COMPILING WITH XELATEX PLEASE USE
+% xelatex -shell-escape -output-driver="xdvipdfmx -z 0" sample.tex
+
+% using XeLaTex
+% English font
+\setCJKmainfont{Roboto Slab}
+\setCJKsansfont{Lato}
+
+% Chinese font
+\setCJKmainfont{Microsoft YaHei}
+\setCJKsansfont{Microsoft YaHei}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% Change the colours if you want to
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+% ...and the markers for the date/location for \cvevent
+% \renewcommand{\cvDateMarker}{\faCalendar*[regular]}
+% \renewcommand{\cvLocationMarker}{\faMapMarker*}
+
+
+% If your CV/résumé is in a language other than English,
+% then you probably want to change these so that when you
+% copy-paste from the PDF or run pdftotext, the location
+% and date marker icons for \cvevent will paste as correct
+% translations. For example Spanish:
+% \renewcommand{\locationname}{Ubicación}
+% \renewcommand{\datename}{Fecha}
+
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want to use an author-year reference style like APA(6)
+%% for your publication list
+% \input{pubs-authoryear}
+
+%% Use (and optionally edit if necessary) this .tex if you
+%% want an originally numerical reference style like IEEE
+%% for your publication list
+\input{../pubs-num}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{王冠麟}
+\tagline{计算机视觉工程师}
+%% You can add multiple photos on the left or right
+\photoR{2.8cm}{../../images/gl_photo}
+% \photoL{2.5cm}{Yacht_High,Suitcase_High}
+
+\personalinfo{%
+  % Not all of these are required!
+  \email{g.wang@mail.de}
+  \phone{+49 151 56312173}
+  \mailaddress{Alfred-Messel-Weg 38, 64287, Darmstadt}
+  \printinfo{\faLinkedin}{Guanlin Wang}[https://www.linkedin.com/in/guanlin-wang-737354206]
+}
+
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
+
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.3}
+
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+
+  \cvsection{FÄHIGKEITEN}
+
+  % Don't overuse these \cvtag boxes — they're just eye-candies and not essential. If something doesn't fit on a single line, it probably works better as part of an itemized list (probably inlined itemized list), or just as a comma-separated list of strengths.
+  \cvsubsection{Computer Vision}
+  
+  \vspace{0.5em}
+
+  \cvtag{Computer Vision}
+
+  \vspace{0.5em}
+
+  \cvtag{Bildverarbeitung}
+
+  \vspace{0.5em}
+
+  \cvtag{Deep Learning}
+
+  \divider\smallskip
+
+  \cvsubsection{Computer Vision Stack}
+
+  \vspace{0.5em}
+
+  \cvtag{OpenCV}
+
+  \vspace{0.5em}
+
+  \cvtag{PyTorch}
+  
+  \vspace{0.5em}
+
+  \cvtag{ONNX}
+
+  \vspace{0.5em}
+
+  \cvtag{YOLO}
+
+  \divider\smallskip
+
+  \cvsubsection{Software Development}
+
+  \vspace{0.5em}
+
+  \cvtag{Python}
+  
+  \vspace{0.5em}
+
+  \cvtag{C++}
+  
+  \vspace{0.5em}
+
+  \cvtag{C\#}
+
+  \vspace{0.5em}
+
+  \cvtag{REST-API}
+  
+  \vspace{0.5em}
+  
+  \cvtag{FastAPI}
+
+  \vspace{0.5em}
+
+  \cvtag{ASP.NET Core}
+
+  \vspace{0.5em}
+
+  \cvtag{.NET Blazor Server}
+
+  \divider\smallskip
+
+  \cvsubsection{Tools}
+
+  \vspace{0.5em}
+
+  \cvtag{Docker}
+
+  \vspace{0.5em}
+
+  \cvtag{Git}
+  
+  \vspace{0.5em}
+  
+  \cvtag{Linux}
+
+
+  \newpage
+  \cvsection{SPRACHEN}
+
+  \vspace{0.5em}
+
+  \cvtag{Chinesisch (Muttersprache)}
+
+  \vspace{0.5em}
+
+  \cvtag{Deutsch (C1)}
+
+  \vspace{0.5em}
+
+  \cvtag{Englisch (B2)}
+
+
+  %% Yeah I didn't spend too much time making all the
+  %% spacing consistent... sorry. Use \smallskip, \medskip,
+  %% \bigskip, \vspace etc to make adjustments.
+  \medskip
+
+  % use ONLY \newpage if you want to force a page break for
+  % ONLY the current column
+  \newpage
+
+  %% Switch to the right column. This will now automatically move to the second
+  %% page if the content is too long.
+  \switchcolumn
+  \cvsection{BERUFSERFAHRUNG}
+
+  \cvevent{Computer Vision Entwickler}{Innomatik AG}{06/2021 -- Heute}{Bensheim}
+
+  \vspace{1em}
+
+  % ocr
+  \cvsubsubsection{OCR-Erkennungspipeline für reale Bilder und technische Zeichnungen}
+
+  \vspace{0.5em}
+
+  \begin{itemize}
+    \item Entwicklung einer modularen OCR-Pipeline für reale Bilder und technische Zeichnungen mit \textbf{Text Detection} und \textbf{Text Recognition}
+    \item Aufbau einer vollständigen Trainings- und Verarbeitungspipeline einschließlich Datenvorbereitung, Annotation, Modelltraining sowie Bildvor- und Nachverarbeitung
+    \item Deployment einer lokalen Desktop-Anwendung sowie als \textbf{REST-API} mit \textbf{FastAPI} und \textbf{Docker}
+  \end{itemize}
+
+  \vspace{0.5em}
+
+  \textbf{Technologien}: Python, OpenCV, PyTorch, PaddleOCR, FastAPI, REST-API, Docker
+
+  \vspace{0.5em}
+
+  % object detection
+  \cvsubsubsection{Object-Detection-System für reale Bildszenarien}
+
+  \vspace{0.5em}
+
+  \begin{itemize}
+    \item Entwicklung eines \textbf{YOLO}-basierten \textbf{Object-Detection}-Systems mit automatisierter Trainingspipeline und \textbf{Multi-Scale-Inferenz}
+    \item Aufbau einer automatisierten Trainingspipeline einschließlich Datensatzaufbereitung, Annotation, eigener Datenaugmentation, Modelltraining und Modellevaluation für ein \textbf{YOLOv12-L}-Modell (\textbf{21 Klassen, ~1.500 Bilder, mAP@50-95: 85-90 \%})
+    \item Deployment der \textbf{ONNX}-Modelle als \textbf{C\# ASP.NET Core WebAPI} mit \textbf{Docker} sowie Integration in eine \textbf{.NET Blazor-Server-Anwendung}
+  \end{itemize}
+
+  \vspace{0.5em}
+
+  \textbf{Technologien}: Python, YOLOv12, ONNX, C\#, ASP.NET Core WebAPI, Blazor Server, Docker
+
+  \vspace{0.5em}
+
+  % visual location
+  \cvsubsubsection{Visuelle Lokalisierung — Kamerarelokalisierung für Digital-Twin-AR}
+
+  \vspace{0.5em}
+
+  \begin{itemize}
+    \item Entwicklung einer \textbf{Visual-Localization}-Pipeline zur \textbf{Kamerapose-Schätzung} auf Basis von \textbf{Feature Matching} und \textbf{2D-3D-Korrespondenzen}
+    \item Entwicklung einer robusten \textbf{Multi-Object-/Multi-View-Pipeline} zur Erhöhung der Lokalisierungsrobustheit mit \textbf{klassischen Feature-Matching}-Verfahren
+    \item Evaluierung und Integration moderner \textbf{Deep-Learning}-Verfahren (\textbf{SuperPoint + LightGlue}) zur Verbesserung des Feature-Matching-Moduls
+    \item Implementierung der gesamten Pipeline in \textbf{C++} mit \textbf{OpenCV}, \textbf{ONNX}-basierter Modellintegration und Bereitstellung als \textbf{REST-API}
+  \end{itemize}
+
+  \vspace{0.5em}
+
+  \textbf{Technologien}: Python, C++, OpenCV, BRISK, FLANN, SuperPoint, LightGlue, ONNX, REST-API
+
+  \vspace{0.5em}
+
+  % qr- barcode
+  \newpage
+  \cvsubsubsection{QR- und Barcode-Erkennungssystem}
+
+  \vspace{0.5em}
+
+  \begin{itemize}
+    \item Entwicklung einer automatisierten Pipeline zur Erkennung von \textbf{QR- und Barcodes} in industriellen Bilddaten
+    \item Implementierung einer \textbf{Multi-Scale-Erkennung} mit Bildvorverarbeitung und robuster Dekodierung mittels \textbf{OpenCV} und \textbf{ZBar}
+    \item Deployment des Erkennungssystems als eigenständige Windows-Anwendung
+  \end{itemize}
+
+  \vspace{0.5em}
+
+  \textbf{Technologien}: Python, OpenCV, ZBar
+
+  \vspace{0.5em}
+
+  % Mesh-Analyse 
+  \cvsubsubsection{Mesh-Analyse für Bauwerksmodelle}
+
+  \vspace{0.5em}
+
+  \begin{itemize}
+    \item Entwicklung einer Pipeline zur \textbf{2D-Projektion} von \textbf{IFC-Bauwerksmodellen} einschließlich Datenextraktion, Koordinatentransformation und höhenbasierter Filterung
+    \item Extraktion und Projektion von \textbf{IfcSpace}-, \textbf{IfcWall}-, \textbf{IfcDoor}- und \textbf{IfcWindow}-Objekten sowie Ausgabe der Polygon- und Objektinformationen im \textbf{JSON}-Format
+    \item Implementierung einer \textbf{C\#}-Konsolenanwendung zur internen Verarbeitung und Analyse von Bauwerksmodellen
+  \end{itemize}
+
+  \vspace{0.5em}
+
+  \textbf{Technologien}: Python, C\#, IfcOpenShell, Open3D
+
+  \vspace{0.5em}
+
+  % Research & Technology Exploration
+  \cvsubsubsection{Forschungs- und Technologieprojekte}
+
+  \vspace{0.5em}
+
+  \begin{itemize}
+    \item \textbf{3D-Rekonstruktion — Technologieevaluierung}
+          \begin{itemize}
+            \item Evaluierung von \textbf{NeRF} und \textbf{3D Gaussian Splatting} für die Rekonstruktion industrieller Szenen, einschließlich lokaler Bereitstellung, Einrichtung der Entwicklungsumgebung sowie Validierung auf internen Datensätzen für Kundendemonstrationen
+          \end{itemize}
+    \item \textbf{Graphbasierte Dateibeziehungsanalyse}
+          \begin{itemize}
+            \item Entwicklung eines graphbasierten Prototyps zur Navigation in großen Projektstrukturen in \textbf{C\#}, einschließlich \textbf{Graphaufbau} und \textbf{Suchalgorithmen} zur effizienten Analyse von Dateibeziehungen
+          \end{itemize}
+    \item \textbf{Interaktive Canvas-Rendering-Engine}
+          \begin{itemize}
+            \item Erweiterung einer \textbf{TypeScript}-basierten \textbf{Canvas-Rendering-Engine} innerhalb einer \textbf{Blazor-Server}-Anwendung durch Integration neuer Visualisierungskomponenten in das bestehende Rendering-Framework unter Beibehaltung der Kompatibilität mit vorhandenen Funktionen
+          \end{itemize}
+  \end{itemize}
+
+
+  \cvsection{AUSBILDUNG}
+
+  \cvevent{M.Sc. Informatik im Bauwesen}{Technische Universität Darmstadt}{04/2018 -- 03/2021}{Darmstadt}
+
+  \cvsubsection{Schwerpunkte}
+  \begin{itemize}
+    \item Revit-Plugin-Entwicklung mit \textbf{.NET Framework}
+    \item BIM-Datenbanken (CRUD) mit \textbf{SQLite}
+    \item BIM-Projektmanagement mit \textbf{MS Project}
+  \end{itemize}
+
+  \vspace{0.5em}
+
+  \cvsubsection{Wissenschaftliche Hilfskraft (HiWi)}
+
+  SCOPE (Semantic Construction Project Engineering)
+  \begin{itemize}
+    \item Entwicklung eines webbasierten ViewCube mit Three.js
+    \item Ontologiemodellierung der IFC-Hierarchie mit Protégé
+  \end{itemize}
+
+  \divider
+
+  \cvevent{B.Sc. Brückenbau}{Chan'an Universität}{09/2012 -- 06/2016}{China}
+
+  % \divider
+
+  \medskip
+
+
+\end{paracol}
+
+
+\end{document}
